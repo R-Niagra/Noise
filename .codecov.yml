@@ -1,0 +1,33 @@
+# https://docs.codecov.io/docs/codecov-yaml
+
+codecov:
+  max_report_age: off
+
+ignore:
+  - "./examples"
+  - "./crypto/suite.go"
+  - "./params.go"
+  - "./init.go"
+  - "./empty.go"
+  - "./callbacks.go"
+  - "./identity/manager.go"
+
+comment: false
+
+coverage:
+  precision: 2
+  round: down
+  status:
+    project:
+      default:
+        threshold: 20%
+        if_not_found: success
+    patch:
+      default:
+        enabled: no
+        threshold: 0%
+        if_not_found: success
+    changes:
+      default:
+        enabled: no
+        if_not_found: success
