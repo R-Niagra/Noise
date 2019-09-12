@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+
+vendor/
+coverage.txt
+
+*.exe
+
+*.iml
+
+docs/book
+
+.DS_Store
+
+*.txt
